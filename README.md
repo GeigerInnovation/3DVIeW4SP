@@ -1,7 +1,7 @@
 # 3DVIeW4SP
-3D Viewer Integration Webpart for SharePoint is developed by Geiger Gruppe, for Using BIM Models integrated in SharePoint. Currently we are able to filter the model using SharePoint Lists. Further features will be added eventually. For further information please visit http://www.geigergruppe.de/sharepoint-3d-viewer{:target="_blank"}.
+3D Viewer Integration Webpart for SharePoint is developed by Geiger Gruppe, for Using BIM Models integrated in SharePoint. Currently we are able to filter the model using SharePoint Lists. Further features will be added eventually. For further information please visit http://www.geigergruppe.de/sharepoint-3d-viewer.
 
-This project is licencend under [GNU GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html){:target="_blank"}. 
+This project is licencend under [GNU GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). 
 
 # Build instructions
 
@@ -21,5 +21,5 @@ How to install for using it.
 currently first time uploaded. Future Chenges will be reported.
 
 ## Additional remarks
-The project is based on [Microsoft SharePoint](https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration){:target="_blank"} and [Autodesk Platform Service](https://aps.autodesk.com/){:target="_blank"}. It does not include any licences, keys or tokens. It is originally developed for internal use. We do not offer any support regarding issues in your own environment. 
+The project is based on [Microsoft SharePoint](https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration) and [Autodesk Platform Service](https://aps.autodesk.com/). It does not include any licences, keys or tokens. It is originally developed for internal use. We do not offer any support regarding issues in your own environment. 
 
