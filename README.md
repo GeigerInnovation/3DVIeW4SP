@@ -21,7 +21,7 @@ If you want to push changes please fork the original repo. Any pull requests enh
 How to install for using it.
 
 1. Set up your SharePoint Framework develompnet environment.
-1.1 Install:  node.js, gulp, Yeoman, Yeoman SharePoint generator
+    * Install:  node.js, gulp, Yeoman, Yeoman SharePoint generator
 2. Clone Repository
 3. Install dependencies
 4. Serve the Webpart
@@ -34,8 +34,8 @@ How to install for using it.
 ## SharePoint adjustments
 
 1. Add necessary ShaprePoint lists 
-1.1 Add Model list
-1.2 Add Mapping lists (optional) 
+    * Add Model list
+    * Add Mapping lists (optional) 
 2. Create Flow for automatic Model translation (optional)
 
 ## Change Log
