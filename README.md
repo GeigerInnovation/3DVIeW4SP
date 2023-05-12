@@ -4,7 +4,7 @@
 This project is licencend under [GNU GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). 
 
 # Build instructions
-<span style="color:red">Code will be added soon!</span> 
+`Code will be added soon!`
 
 ## Prerequisites
 Liste an Entwicklungstools und Frameworks, die zu nutzen sind
