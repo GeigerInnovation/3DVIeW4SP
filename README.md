@@ -18,16 +18,14 @@ List of development tools and frameworks to use
 If you want to push changes please fork the original repo. Any pull requests enhancing this projects are very welcome. If you are not developing on your own, also bug reports are helpful. We will try to fix them as soon as possible.
 
 ## Install
-#### 1. Set up your SharePoint Framework develompnet environment
-##### Node.js
+### 1. Set up your SharePoint Framework develompnet environment
+#### Node.js
  Install the most recent LTS version of Node.js v16
 
  1. Visit the official Node.js website: https://nodejs.org. 
  2. Click on the "Downloads" button on the homepage. 
-
-3. On the Downloads page, you will see different versions of Node.js available. Scroll down until you find the "16.x.x" release line. Click on the version number you want to install (e.g., 16.19.1). 
-
-4. On the version's download page, you'll find different installers for various operating systems. Choose the appropriate installer for your system. For example: 
+ 3. On the Downloads page, you will see different versions of Node.js available. Scroll down until you find the "16.x.x" release line. Click on the version number you want to install (e.g., 16.19.1). 
+ 4. On the version's download page, you'll find different installers for various operating systems. Choose the appropriate installer for your system. For example: 
 
     * For Windows, click on the Windows Installer button. 
     * For macOS, click on the macOS Installer button. 
@@ -41,7 +39,7 @@ If you want to push changes please fork the original repo. Any pull requests enh
 
 8. Verify that Node.js is installed correctly by running the following command: 
 `node -v`
-##### SPFx - Yeomen - Gulp
+#### SPFx - Yeomen - Gulp
 
 Install development toolchain prerequisites 
 
@@ -53,7 +51,7 @@ npm install gulp-cli yo @microsoft/generator-sharepoint --global
 ```
 Or you can install them one by one:
 
-##### Install Gulp 
+#### Install Gulp 
 
 Gulp is a JavaScript-based task runner used to automate repetitive tasks. The SharePoint Framework build toolchain uses Gulp tasks to build projects, create JavaScript bundles, and the resulting packages used to deploy solutions. 
 
@@ -61,7 +59,7 @@ Enter the following command to install the Gulp CLI:
 
 `npm install gulp-cli --global `
 
-##### Install Yeoman 
+#### Install Yeoman 
 
 Yeoman helps you kick-start new projects, and prescribes best practices and tools to help you stay productive. SharePoint client-side development tools include a Yeoman generator for creating new web parts. The generator provides common build tools, common boilerplate code, and a common playground website to host web parts for testing. 
 
@@ -73,7 +71,7 @@ Enter the following command to install Yeoman:
 
 `npm install yo --global`
 
-##### Install Yeoman SharePoint generator 
+#### Install Yeoman SharePoint generator 
 
 The Yeoman SharePoint web part generator helps you quickly create a SharePoint client-side solution project with the right toolchain and project structure. 
 
@@ -81,7 +79,7 @@ To install the SharePoint Framework Yeoman generator globally, enter the followi
 
 `npm install @microsoft/generator-sharepoint –global `
 
-##### Trusting the self-signed developer certificate 
+#### Trusting the self-signed developer certificate 
 
 The SharePoint Framework's local webserver, used when testing your custom solutions from your development environment, uses HTTPS by default. This is implemented using a development self-signed SSL certificate. Self-signed SSL certificates are not trusted by your developer environment. You must first configure your development environment to trust the certificate. 
 
@@ -95,7 +93,7 @@ Note
 
 This assumes you have installed all dependencies with npm install after creating the project. This step will install all gulp tasks as part of a project.  
 
-#### 2. Clone Repository
+### 2. Clone Repository
 
 1. On the repository page, look for the green "Code" button and click on it. 
 2. In the dropdown menu, ensure that "HTTPS" is selected (unless you prefer to use SSH). 
@@ -113,13 +111,13 @@ This assumes you have installed all dependencies with npm install after creating
 
 Press Enter to execute the command. 
 
-#### 3. Install dependencies
+### 3. Install dependencies
 
 1. Navigate to folder “Forge Viewer” inside the repository 
 2. Enter the command “npm install” to install the projects dependencies 
     `npm install`
 
-#### 4. Serve the Webpart
+### 4. Serve the Webpart
 
 1. Navigate to folder “Forge Viewer” inside the repository
 2. Enter the command “gulp serve” to serve the App
