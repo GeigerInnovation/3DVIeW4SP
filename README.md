@@ -19,40 +19,53 @@ If you want to push changes please fork the original repo. Any pull requests enh
 
 ### Quick start guide
 If you are experienced in developing SPFx webparts or development in general this quick start guide may be for you.
+    
 1. Install the most recent LTS version of Node.js v16
 
 2. Install the required parts of the SharePoint Framework development toolchain: SPFx - Yeomen - Gulp
+
     `npm install gulp-cli yo @microsoft/generator-sharepoint --global`
 
 3. Trusting the self-signed developer certificate
-`gulp trust-dev-cert`
-A more detailed version of this part of the installation see below in documantation.
+
+    `gulp trust-dev-cert`
+
+    A more detailed version of this part of the installation see below in documantation.
 
 4. Clone Repository
-`git clone https://github.com/GeigerInnovation/3DVIeW4SP.git`
+
+    `git clone https://github.com/GeigerInnovation/3DVIeW4SP.git`
 
 5. Install dependencies
-`npm install`
+
+    `npm install`
 
 6. Enter your SharePoint tenant site in the serve.json file with replacing the value of the "initialPage" property
-`"initialPage": "https://https://enter-your-SharePoint-site/_layouts/workbench.aspx"`
+
+    `"initialPage": "https://https://enter-your-SharePoint-site/_layouts/workbench.aspx"`
 
 7. Create a list on your SharePoint tenant called:
-`"Modellliste"`
+
+    `"Modellliste"`
 
 8. Enter the following columns into the list:
-`"Title", "Name", "URN", "Eigenschaften Listen"`
+
+    `"Title", "Name", "URN", "Eigenschaften Listen"`
 
 9. Enter a record into the just created list for the required data which are:
+    
     `"Title", "Name" and "URN"`
+
 10. Enter your CLIENT_ID and CLIENT_SECRET in the accessToken.ts file in the marked line. You get these credentials from your Autodesk account 
+    
     ```
     CLIENT_ID = "" /*Enter your Client_ID*/
     CLIENT_SECRET = "" /*Enter your Client_Secret*/
     ```
 
 11. Last step is to serve the SPFx Webpart with the command
-`gulp serve`
+
+    `gulp serve`
 
 For a more detailed version of the setup and installation guide see below.
 <br>
