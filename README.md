@@ -37,19 +37,23 @@ If you want to push changes please fork the original repo. Any pull requests enh
 
 7. After the installation completes, open a command prompt or terminal window. 
 
-8. Verify that Node.js is installed correctly by running the following command: 
+8. Verify that Node.js is installed correctly by running the following command:
+
 `node -v`
+<br>
+
 #### SPFx - Yeomen - Gulp
 
 Install development toolchain prerequisites 
 
 The SharePoint Framework development and build toolchain leverages various popular open-source tools. While most dependencies are included in each project, you need to install a few dependencies globally on your workstation. 
 
-Hint: You can install all three of the following tools in a single line:
-```
-npm install gulp-cli yo @microsoft/generator-sharepoint --global
-```
+###### Hint: You can install all three of the following tools in a single line:
+
+`npm install gulp-cli yo @microsoft/generator-sharepoint --global`
+
 Or you can install them one by one:
+<br>
 
 #### Install Gulp 
 
@@ -58,18 +62,18 @@ Gulp is a JavaScript-based task runner used to automate repetitive tasks. The Sh
 Enter the following command to install the Gulp CLI: 
 
 `npm install gulp-cli --global `
+<br>
 
 #### Install Yeoman 
 
 Yeoman helps you kick-start new projects, and prescribes best practices and tools to help you stay productive. SharePoint client-side development tools include a Yeoman generator for creating new web parts. The generator provides common build tools, common boilerplate code, and a common playground website to host web parts for testing. 
 
-Important 
-
-Yeoman v4.x is required by the SPFx v1.13 forward. 
+###### Important: Yeoman v4.x is required by the SPFx v1.13 forward. 
 
 Enter the following command to install Yeoman: 
 
 `npm install yo --global`
+<br>
 
 #### Install Yeoman SharePoint generator 
 
@@ -77,7 +81,8 @@ The Yeoman SharePoint web part generator helps you quickly create a SharePoint c
 
 To install the SharePoint Framework Yeoman generator globally, enter the following command: 
 
-`npm install @microsoft/generator-sharepoint –global `
+`npm install @microsoft/generator-sharepoint –global`
+<br>
 
 #### Trusting the self-signed developer certificate 
 
@@ -89,9 +94,9 @@ Once a project has been created with the Yeoman generator for the SharePoint Fra
 
 `gulp trust-dev-cert`
  
-Note 
-
-This assumes you have installed all dependencies with npm install after creating the project. This step will install all gulp tasks as part of a project.  
+###### Note: This assumes you have installed all dependencies with npm install after creating the project. This step will install all gulp tasks as part of a project.
+<br>
+<br>
 
 ### 2. Clone Repository
 
@@ -99,43 +104,49 @@ This assumes you have installed all dependencies with npm install after creating
 2. In the dropdown menu, ensure that "HTTPS" is selected (unless you prefer to use SSH). 
 3. Copy the repository URL by clicking on the clipboard icon next to it. 
 4. Navigate to the directory where you want to clone the repository using the cd command (e.g., cd Documents/Projects). 
-5. Once in the desired directory, use the following command to clone the repository (replace "repository-url" with the URL you copied in Step 2): 
+5. Once in the desired directory, use the following command to clone the repository 
 
-    ```
-    git clone repository-url 
-        
-    For example: 
-
-    git clone https://github.com/username/repository-name.git 
-    ```
+`git clone https://github.com/GeigerInnovation/3DVIeW4SP.git`
 
 Press Enter to execute the command. 
+<br>
+<br>
 
 ### 3. Install dependencies
 
 1. Navigate to folder “Forge Viewer” inside the repository 
 2. Enter the command “npm install” to install the projects dependencies 
-    `npm install`
+
+`npm install`
+<br>
+<br>
 
 ### 4. Serve the Webpart
 
 1. Navigate to folder “Forge Viewer” inside the repository
 2. Enter the command “gulp serve” to serve the App
+
 `gulp serve`
+
 3. To display the served App in the browser you have to copy the URL from your SharePoint site tenant where you want the App to run into the serve.json file and replace the placeholder for the initialPage property.
+
 `"initialPage": "https://localhost:5432/workbench"`
+
 4. To receive a access token for displaying your models in the viewer you have to copy your CLIENT_ID and CLIENT_SECRET, which you get from your Autodesk account, into the quotes for ID and SECRET in the accessToken.ts component (see below).
-    ```
-    CLIENT_ID = "" /*Enter your Client_ID*/
-    CLIENT_SECRET = "" /*Enter your Client_Secret*/
-    ```
 
-
+```
+CLIENT_ID = "" /*Enter your Client_ID*/
+CLIENT_SECRET = "" /*Enter your Client_Secret*/
+```
+<br>
+<br>
 
 ## Deployment
 `Content will be added`
 1. Bundle and Ship Webpart
 2. Add packed solution to SharePoint
+<br>
+<br>
 
 ## SharePoint adjustments
 `Content will be added`
@@ -143,9 +154,13 @@ Press Enter to execute the command.
     * Add Model list
     * Add Mapping lists (optional) 
 2. Create Flow for automatic Model translation (optional)
+<br>
+<br>
 
 ## Change Log
 Currently first time uploaded. Future Changes will be reported.
+<br>
+<br>
 
 ## Additional remarks
 The project is based on [Microsoft SharePoint](https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration) and [Autodesk Platform Service](https://aps.autodesk.com/). It does not include any licences, keys or tokens. It is originally developed for internal use. We do not offer any support regarding issues in your own environment. 
