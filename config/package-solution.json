@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "3DVIeW4SP",
+    "id": "c38a34f2-9868-48a3-9f8b-e34e700132ea",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": false,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Geiger Gruppe",
+      "websiteUrl": "https://www.geigergruppe.com/de-de/sharepoint-3d-viewer",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "3D Viewer Integration Webpart for SharePoint is developed by Geiger Gruppe, for Using BIM Models integrated in SharePoint."
+      },
+      "longDescription": {
+        "default": "3D Viewer Integration Webpart for SharePoint is developed by Geiger Gruppe, for Using BIM Models integrated in SharePoint. Currently we are able to filter the model using SharePoint Lists. Further features will be added eventually."
+      },
+      "screenshotPaths": [
+        "src/webparts/assets/Viewer_start_screen.png",
+        "src/webparts/assets/Viewer_model_loaded.png",
+        "src/webparts/assets/Viewer_model_and_list_loaded.png"
+    ],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "3DVIeW4SP Feature",
+        "description": "The feature that activates elements of the 3DVIeW4SP solution.",
+        "id": "ad47cf3b-0a14-4533-a5fc-dee090a2973a",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/forge-viewer-dev.sppkg"
+  }
+}

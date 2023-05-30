@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "forge-viewer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/forgeViewer/ForgeViewerWebPart.js",
+          "manifest": "./src/webparts/forgeViewer/ForgeViewerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ForgeViewerWebPartStrings": "lib/webparts/forgeViewer/loc/{locale}.js"
+  }
+}

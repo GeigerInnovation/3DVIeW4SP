@@ -1,0 +1,83 @@
+/**
+ * Component Name: SideBar.module.scss
+ * Author: Geiger Gruppe
+ * License: GPLv3
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * @package    3DVIeW4SP
+ * @contact    Fabian Ritter <fabian.ritter@geigergruppe.de>
+ * @copyright  Copyright (c) 2022 - 2023, Geiger Gruppe
+ * @link       https://www.geigergruppe.com/de-de/sharepoint-3d-viewer
+ * @license    http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+@import "src/webparts/forgeViewer/variables.module.scss";
+
+.sidebar {
+  position: relative;
+  width: 220px;
+  height: 100%;
+  background: white;
+  border-right: 1px solid $borderDarkerGrey;
+  flex-shrink: 0;
+  .selectionButton {
+    position: absolute;
+    bottom: 16px;
+    margin-left: 8px;
+    padding-top: 8px;
+    margin-right: 8px;
+    border-top: 1px solid lightgrey;
+    > button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.searchBox {
+  border: 0px;
+  width: 100%;
+  border-bottom: 1px solid $borderDarkerGrey;
+  &:focus-visible {
+    outline: none;
+    border-radius: 0px;
+  }
+  &:focus {
+    outline: none;
+    border-radius: 0px;
+  }
+}
+
+.sideBarMode {
+  font-weight: 600;
+  padding: 10px 10px 10px 10px;
+  margin: 0;
+  border-bottom: 1px solid #b7b7b7;
+  background-size: auto 100%;
+  background-position-x: 126px;
+  background-repeat: no-repeat;
+}
+
+.modelName {
+  font-weight: 200;
+  font-size: 11px;
+  margin: 2px 0px 0px 0px;
+}
+
+.applyButton {
+  background-color: $geigerButtonColor;
+  border-color: white;
+  &:hover {
+    background-color: $geigerTheme;
+    border-color: white;
+  }
+}
+.resetButton {
+  background-color: $geigerRedButtonColor;
+  border-color: white;
+  color: $standardWhite;
+  &:hover {
+    background-color: $geigerRed;
+    border-color: white;
+    color: $standardWhite;
+  }
+}

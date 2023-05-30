@@ -1,0 +1,65 @@
+/**
+ * Component Name: ForgeViewer.module.scss
+ * Author: Geiger Gruppe
+ * License: GPLv3
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * @package    3DVIeW4SP
+ * @contact    Fabian Ritter <fabian.ritter@geigergruppe.de>
+ * @copyright  Copyright (c) 2022 - 2023, Geiger Gruppe
+ * @link       https://www.geigergruppe.com/de-de/sharepoint-3d-viewer
+ * @license    http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+@import "src/webparts/forgeViewer/variables.module.scss";
+
+.App {
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: calc(100vh - 186px);
+  overflow: hidden;
+
+  main {
+    position: relative;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .upperContent {
+      display: flex;
+      flex-grow: 1;
+
+      .ForgeViewer {
+        position: relative;
+        height: 100%;
+        flex-grow: 1;
+      }
+
+      .ForgeViewerNoModel {
+        position: relative;
+        flex-grow: 1;
+        height: 100%;
+        background-color: $geigerGrey;
+      }
+
+      .noModelSelect {
+        position: relative;
+        width: 250px;
+        height: 84px;
+        background-size: 250px;
+        top: 38%;
+        left: 38%;
+        background-repeat: no-repeat;
+        background-image: url(https://raw.githubusercontent.com/autodesk-forge/forge-simple-viewer-nodejs/develop/wwwroot/logo.png);
+        
+        > p {
+          position: relative;
+          top: 65px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

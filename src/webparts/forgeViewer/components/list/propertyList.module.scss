@@ -1,0 +1,80 @@
+/**
+ * Component Name: PropertyList.module.scss
+ * Author: Geiger Gruppe
+ * License: GPLv3
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * @package    3DVIeW4SP
+ * @contact    Fabian Ritter <fabian.ritter@geigergruppe.de>
+ * @copyright  Copyright (c) 2022 - 2023, Geiger Gruppe
+ * @link       https://www.geigergruppe.com/de-de/sharepoint-3d-viewer
+ * @license    http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+@import "src/webparts/forgeViewer/variables.module.scss";
+
+.propertyList {
+  max-height: 0;
+  overflow: hidden;
+  border-top: 1px solid hsl(0, 0%, 67%);
+  transition: 50ms ease-in;
+  &.expanded {
+    max-height: 300px;
+  }
+  .listRow {
+    &:hover {
+      background: unset !important;
+      color: unset !important;
+    }
+    .listColumn {
+      width: calc(100% - 8px);
+      height: 100%;
+      padding: 0 0 0 8px;
+      display: flex;
+      align-items: center;
+      &:has(.selected) {
+        background: $geigerButtonColor !important;
+        color: white !important;
+      }
+      cursor: pointer;
+      &:hover {
+        background: rgb(243, 242, 241);
+        color: rgb(50, 49, 48);
+      }
+      > div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  :global {
+    .ms-Viewport {
+      height: 100%;
+      overflow: auto;
+      .ms-DetailsList {
+        // height: 100%;
+        padding: 0 .5rem;
+        .ms-DetailsHeader-cell {
+          padding: 0;
+          margin: 4px;
+          > span > span,
+          > div > div,
+          span > div,
+          > div > span {
+            padding: 0 0 0 8px;
+          }
+        }
+        .ms-DetailsRow-cell {
+          padding: 0;
+          display: flex;
+          align-items: center;
+          margin: 4px;
+        }
+        .ms-DetailsHeader-cellSizer {
+          all: unset !important;
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+}

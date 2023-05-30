@@ -1,0 +1,45 @@
+/**
+ * Component Name: Navbar.module.scss
+ * Author: Geiger Gruppe
+ * License: GPLv3
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * @package    3DVIeW4SP
+ * @contact    Fabian Ritter <fabian.ritter@geigergruppe.de>
+ * @copyright  Copyright (c) 2022 - 2023, Geiger Gruppe
+ * @link       https://www.geigergruppe.com/de-de/sharepoint-3d-viewer
+ * @license    http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+@import "src/webparts/forgeViewer/variables.module.scss";
+
+.navBar {
+  // width: 100%;
+  height: 100%;
+  width: 40px;
+  z-index: 1;
+  background: $geigerTheme;
+}
+
+.elements {
+  color: $geigerThemeDark;
+
+  button {
+    width: 100%;
+  i {
+    color: $geigerThemeDark;
+  }
+  &:focus {
+    i {
+    color: $geigerRed;
+    }
+  }
+  &:hover {
+    background: $geigerWhiteGrey;
+    }
+  }
+}
+
+.iconDescription {
+  font-size: 11px;
+}
